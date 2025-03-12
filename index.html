@@ -1,24 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-   <div class="container">
-        <div class="header">
-            <h1 class="title">📢 社群重要公告</h1>
-            <div class="time">发布日期：2025年3月11日</div>
-        </div>
-
-        <div class="content">
-            <div class="notice-item">
-                <h3>🎯 社群守则</h3>
-                <p>1. 禁止发布广告信息，保持友善交流氛围<br>
-                2. 下单或账号问题，培训等问题，在社群内联系社群工作人员处理（在线时间AM9:00-PM6:30）<br>
-                3. 在任何公开平台(包括但不限于/转转/抖音/微博/拼多多/京东/天猫淘宝等平台)对“TCL之家”产品以任何形式不当披露价格或不当宣传。一经违规销售将受到封号处理，严重违规者将永久封号永不合作！！！</p>
-            </div>
-
-<div class="notice-item">
-    <div class="activity-wrapper"> <!-- 新增包裹容器 -->
-        <div class="activity-content"> <!-- 左侧内容容器 -->
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="TCL之家社群活动 - 瓜分10万现金奖励，晒单返佣，直播福利">
@@ -150,10 +132,10 @@
             <ul>
                 <li>TCL电视：返佣18元/台</li>
                 <li>空调：返佣38-500元/台</li>
-                  <li>门锁：返佣88-118元/台</li>
+                <li>门锁：返佣88-118元/台</li>
                 <li>雷鸟电视：返佣38元/台</li>
                 <li>乐华电视：返佣50元/台</li>
-  <li>指定型号可参加，详情点击查看活动完整细则或扫码二维码</li>
+                <li>指定型号可参加，详情点击查看活动完整细则或扫码二维码</li>
             </ul>
         </section>
 
@@ -163,23 +145,26 @@
             <p>周一至周五 18:00-20:00<br>
             参与互动抽88-128元红包</p>
         </section>
-          <section class="activity-section">
-            <h2>🆓免费安装</h2>
+
+        <!-- 免费安装模块 -->
+        <section class="activity-section">
+            <h2>🆓 免费安装</h2>
             <p>TCL电视98英寸以上首次安装免费，免费提供安装调试服务(座装或挂装);<br>
             TCL电视、雷鸟电视指定型号免基础安装。</p>
         </section>
-<!-- 在 </body> 标签之前添加长图 -->
-<img src="99673295868dd3a1e06bc3a4bcc7a3a.jpg" alt="活动政策详情" style="width:100%; height:auto;">
+
+        <!-- 长图 -->
+        <img src="99673295868dd3a1e06bc3a4bcc7a3a.jpg" alt="活动政策详情" style="width:100%; height:auto;">
+
         <!-- 模态框 -->
         <div id="detailModal" class="modal">
             <div class="modal-content">
-                <img src="addme.jpg" 
-                     alt="活动详情" 
-                     style="width:100%;height:auto;">
+                <img src="addme.jpg" alt="活动详情" style="width:100%;height:auto;">
             </div>
         </div>
 
-        <button onclick="showModal()" class="view-detail-btn">🤝如有业务咨询事项，点击咨询TCL社群管理员🤝</button>
+        <!-- 咨询按钮 -->
+        <button onclick="showModal()" class="view-detail-btn">🤝 如有业务咨询事项，点击咨询TCL社群管理员 🤝</button>
     </div>
 
     <script>
@@ -191,8 +176,9 @@
         window.onclick = function(event) {
             const modal = document.getElementById('detailModal');
             if (event.target == modal) {
-                modal.style.display = "none";      
-         
+                modal.style.display = "none";
+            }
+        };
     </script>
 </body>
 </html>
