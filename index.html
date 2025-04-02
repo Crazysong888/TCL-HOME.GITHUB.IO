@@ -6,20 +6,58 @@
     <meta name="description" content="TCL之家社群活动 - 瓜分10万现金奖励，晒单返佣，直播福利">
     <title>TCL之家社群活动</title>
     <style>
-        /* 保持原有样式不变 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Microsoft Yahei', sans-serif;
+        /* 新增响应式图片样式 */
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
-        /* ...其他样式保持不变... */
+
+        /* 优化表格样式 */
+        .reward-table,
+        .rebate-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .reward-table th,
+        .reward-table td,
+        .rebate-table th,
+        .rebate-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .reward-table th,
+        .rebate-table th {
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .reward-table,
+            .rebate-table {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img src="活动KV.jpg" alt="TCL之家" class="brand-logo">
+            <!-- 响应式图片设置 -->
+            <picture>
+                <source media="(min-width: 1200px)" srcset="活动KV-large.jpg">
+                <source media="(min-width: 768px)" srcset="活动KV-medium.jpg">
+                <img src="活动KV-small.jpg" 
+                     alt="TCL之家" 
+                     class="brand-logo responsive-img"
+                     loading="lazy">
+            </picture>
             <h1 class="title">4月社群专属活动</h1>
             <div class="time">活动时间：2025年4月1日-4月30日</div>
         </div>
@@ -28,15 +66,19 @@
         <section class="activity-section">
             <h2>🎉 瓜分10万现金</h2>
             <table class="reward-table">
-                <tr>
-                    <th>排名</th>
-                    <th>奖励金额</th>
-                </tr>
-                <tr><td>第1-5名</td><td>1088元</td></tr>
-                <tr><td>第6-10名</td><td>888元</td></tr>
-                <tr><td>第11-50名</td><td>588元</td></tr>
-                <tr><td>第51-100名</td><td>388元</td></tr>
-                <tr><td>第101-300名</td><td>188元</td></tr>
+                <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>奖励金额</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>第1-5名</td><td>1088元</td></tr>
+                    <tr><td>第6-10名</td><td>888元</td></tr>
+                    <tr><td>第11-50名</td><td>588元</td></tr>
+                    <tr><td>第51-100名</td><td>388元</td></tr>
+                    <tr><td>第101-300名</td><td>188元</td></tr>
+                </tbody>
             </table>
             <p>参与条件：仅限24年/25年年累销售金额≥5万的用户参与；当月销售两个品类以上且销售金额≥2万</p>
         </section>
@@ -44,53 +86,31 @@
         <!-- 晒单福利模块 -->
         <section class="activity-section">
             <h2>📸 晒单返佣</h2>
-            <ul>
-                <li>冰箱：返佣100-500元/台</li>
-                <li>空调：返佣38-500元/台</li>
-                <li>门锁：返佣88-118元/台</li>
-                <li>雷鸟电视：返佣38元/台</li>
-                <li>乐华电视：返佣50元/台</li>
-                <li>指定型号可参加（详情活动完整细则见下图）</li>
-            </ul>
+            <table class="rebate-table">
+                <thead>
+                    <tr>
+                        <th>产品</th>
+                        <th>返佣金额</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>冰箱</td><td>100-500元/台</td></tr>
+                    <tr><td>空调</td><td>38-500元/台</td></tr>
+                    <tr><td>门锁</td><td>88-118元/台</td></tr>
+                    <tr><td>雷鸟电视</td><td>38元/台</td></tr>
+                    <tr><td>乐华电视</td><td>50元/台</td></tr>
+                </tbody>
+            </table>
+            <p>指定型号可参加（详情活动完整细则见下图）</p>
         </section>
 
-        <!-- 直播福利模块 -->
-        <section class="activity-section">
-            <h2>📺 直播抽奖</h2>
-            <p>每日18:00-20:00<br>
-            评论区晒单/互动可参与抽红包<br>
-            周一至周五直播间抽奖赠送免费安装福利</p>
-        </section>
-
-        <section class="activity-section">
-            <h2>🎉免费安装&下单送赠</h2>
-            <p>所有TCL电视98英寸首次安装免费（含挂装/座装）<br>
-             空调、雷鸟、乐华部分产品下单后提供订单号给TCL之家APP客服可领取送赠礼（详情活动完整细则见下图）</p>
-        </section>
-
-        <!-- 模态框 -->
-        <div id="detailModal" class="modal">
-            <div class="modal-content">
-                <img src="4月政策.jpg" 
-                     alt="活动详情" 
-                     style="width:100%;height:auto;">
-            </div>
-        </div>
-
-        <button onclick="showModal()" class="view-detail-btn">查看完整活动细则</button>
+        <!-- 4月政策图片 -->
+        <picture>
+            <img src="4月政策.jpg" 
+                 alt="4月政策" 
+                 class="responsive-img"
+                 loading="lazy">
+        </picture>
     </div>
-
-    <script>
-        // 保持原有脚本不变
-        function showModal() {
-            document.getElementById('detailModal').style.display = 'flex';
-        }
-        window.onclick = function(event) {
-            const modal = document.getElementById('detailModal');
-            if (event.target == modal) {
-                modal.style.display = "none";      
-            }
-        }
-    </script>
 </body>
 </html>
