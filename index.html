@@ -3,44 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TCL之家社群活动 - 瓜分10万现金奖励，晒单返佣，直播福利">
-    <title>TCL之家社群活动</title>
+    <meta name="description" content="TCL社群活动规则 - 晒单返佣、套购补贴、保价政策">
+    <title>TCL社群活动规则</title>
     <style>
-        /* 新增响应式图片样式 */
         .responsive-img {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto;
+            margin: 20px auto;
         }
 
-        /* 优化表格样式 */
-        .reward-table,
-        .rebate-table {
+        .activity-table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
-            text-align: center;
-        }
-        
-        .reward-table th,
-        .reward-table td,
-        .rebate-table th,
-        .rebate-table td {
-            padding: 12px;
-            border: 1px solid #ddd;
-            text-align: center;
+            background: white;
         }
 
-        .reward-table th,
-        .rebate-table th {
+        .activity-table th, 
+        .activity-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .activity-table th {
             background-color: #f5f5f5;
             font-weight: bold;
         }
 
+        h1, h2 {
+            color: #ff0000;
+            margin: 20px 0;
+        }
+
+        .time-period {
+            color: #666;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        .highlight-red {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .policy-box {
+            background: #fff5f5;
+            border-left: 4px solid #ff0000;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
         @media (max-width: 768px) {
-            .reward-table,
-            .rebate-table {
+            .activity-table {
                 font-size: 14px;
             }
         }
@@ -48,69 +64,109 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <!-- 响应式图片设置 -->
-            <picture>
-                <source media="(min-width: 1200px)" srcset="活动KV-large.jpg">
-                <source media="(min-width: 768px)" srcset="活动KV-medium.jpg">
-                <img src="活动KV-small.jpg" 
-                     alt="TCL之家" 
-                     class="brand-logo responsive-img"
-                     loading="lazy">
-            </picture>
-            <h1 class="title">4月社群专属活动</h1>
-            <div class="time">活动时间：2025年4月1日-4月30日</div>
-        </div>
-
-        <!-- 现金奖励模块 -->
-        <section class="activity-section">
-            <h2>🎉 瓜分10万现金</h2>
-            <table class="reward-table">
-                <thead>
-                    <tr>
-                        <th>排名</th>
-                        <th>奖励金额</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>第1-5名</td><td>1088元</td></tr>
-                    <tr><td>第6-10名</td><td>888元</td></tr>
-                    <tr><td>第11-50名</td><td>588元</td></tr>
-                    <tr><td>第51-100名</td><td>388元</td></tr>
-                    <tr><td>第101-300名</td><td>188元</td></tr>
-                </tbody>
-            </table>
-            <p>参与条件：仅限24年全年/25年1-3月累积销售金额≥5万的用户参与；当月销售两个品类以上且销售金额≥2万</p>
-        </section>
+        <h1>活动规则</h1>
 
         <!-- 晒单福利模块 -->
-        <section class="activity-section">
-            <h2>📸 晒单返佣</h2>
-            <table class="rebate-table">
+        <section>
+            <h2>晒单福利</h2>
+            <div class="time-period">活动时间：5月1日-5月31日</div>
+            <table class="activity-table">
                 <thead>
                     <tr>
-                        <th>产品</th>
-                        <th>返佣金额</th>
+                        <th>产品类型</th>
+                        <th>返佣规则</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>冰箱</td><td>100-500元/台</td></tr>
-                    <tr><td>空调</td><td>38-500元/台</td></tr>
-                    <tr><td>门锁</td><td>88-118元/台</td></tr>
-                    <tr><td>雷鸟电视</td><td>38元/台</td></tr>
-                    <tr><td>乐华电视</td><td>50元/台</td></tr>
+                    <tr>
+                        <td>空调</td>
+                        <td>
+                            <span class="highlight-red">38/台</span>
+                        </td>
+                    </tr>
+                    <tr>
+                                            <td>中央空调</td>
+                        <td>
+                            <span class="highlight-red">100-500元/台</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>雷鸟电视</td>
+                        <td>
+                            <span class="highlight-red">38元/台</span>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>乐华电视</td>
+                        <td>
+                            <span class="highlight-red">38元/台</span>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
-            <p>指定型号可参加（详情活动完整细则见下图）</p>
+            <div class="policy-box">
+                <p>➤ 需在购买后完成：</p>
+                <p>1. 群内晒单（订单截图+订单号）</p>
+                <p>2. 在线登记订单信息</p>
+            </div>
         </section>
 
-        <!-- 4月政策图片 -->
-        <picture>
-            <img src="4月政策.jpg" 
-                 alt="4月政策" 
-                 class="responsive-img"
-                 loading="lazy">
-        </picture>
+        <!-- 套购补贴模块 -->
+        <section>
+            <h2>套购补贴狂欢</h2>
+            <div class="time-period">活动时间：5月1日-5月31日</div>
+            <div class="policy-box">
+                <p>购买55英寸及以上指定电视型号后7天内：</p>
+                <p>✓ 下单任意回音壁产品享<span class="highlight-red">至高500元补贴</span></p>
+                <p>✓ 示例：Q10L Pro电视 + Q85H Pro回音壁，即享返佣500元！</p>
+            </div>
+            <img src="电视补贴.jpg" alt="套购补贴规则" class="responsive-img" loading="lazy">
+        </section>
+
+        <!-- 保价政策模块 -->
+        <section>
+            <h2>保价618</h2>
+            <div class="time-period">保价期限：4月25日-6月18日</div>
+            <div class="policy-box">
+                <p>➤ 冰洗产品价格保障：</p>
+                <p>• 差价返还（需联系客服提供有效凭证）</p>
+            </div>
+        </section>
+
+        <!-- 新品体验券模块 -->
+        <section>
+            <h2>新品体验券</h2>
+            <div class="time-period">领取时间：5月1日-5月31日</div>
+            <div class="policy-box">
+                <p>➤ TCL之家APP领取：</p>
+                <p>• 洗衣机新品<span class="highlight-red">100-200元</span>专属券</p>
+                <p>• 限自购使用，可与其它优惠叠加</p>
+            </div>
+        </section>
+
+        <!-- 晒单红包模块 -->
+        <section>
+            <h2>晒单红包</h2>
+            <div class="time-period">活动时间：5月1日-5月9日</div>
+            <div class="policy-box">
+                <p>购买大眼萌系列洗衣机（二选一）：</p>
+                <p>✓ 社群晒单领<span class="highlight-red">100元红包</span></p>
+                <p>✓ TCL之家APP好评领<span class="highlight-red">100元红包</span></p>
+            </div>
+        </section>
+
+        <!-- 免费安装模块 -->
+        <section>
+            <h2>免费安装</h2>
+            <div class="policy-box">
+                <p>➤ TCL电视98英寸及以上下单享免费安装，免费提供安装调试服务(座装或挂装);TCL电视、雷鸟电视指定型号免基础安装：</p>
+                <p>• 免费上门安装服务</p>
+                <p>• 含基础材料（挂架/支架）</p>
+                <p>➤ 空调指定机型：</p>
+                <p>• 免基础安装费（含3米管线）</p>
+            </div>
+        </section>
     </div>
 </body>
 </html>
